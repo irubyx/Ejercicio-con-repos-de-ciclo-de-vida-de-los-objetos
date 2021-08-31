@@ -23,7 +23,7 @@ namespace ConsoleApplication
             {
                 Train nuevoTren = new Train($"Tren {i}");
             }
-            Console.WriteLine($"Contador: {Train.count}");
+            Console.WriteLine($"Contador: {Train.Contador()}");
 
             Train t1 = new Train("Last Train To London");
             Train t2 = new Train("Last Train To London");

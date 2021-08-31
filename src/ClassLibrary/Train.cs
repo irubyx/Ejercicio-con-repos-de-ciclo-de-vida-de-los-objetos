@@ -13,7 +13,7 @@ namespace ClassLibrary
     /// </summary>
     public class Train
     {
-        public static int count = 0;
+        private static int count = 0;
 
         public string id;
 
@@ -33,6 +33,11 @@ namespace ClassLibrary
         {
             this.Id = nombre;
             count++;
+        }
+
+        public static int Contador()
+        {
+            return count;
         }
 
         ~Train()
