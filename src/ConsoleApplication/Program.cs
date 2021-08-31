@@ -27,7 +27,7 @@ namespace ConsoleApplication
             {
                 Train nuevoTren = new Train($"{i}");
             }
-    
+            
             Console.WriteLine($"t1 == t2: {t1==t2}");
             Console.WriteLine($"t2 == t3: {t2==t3}");            
         }
