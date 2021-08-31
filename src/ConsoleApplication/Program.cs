@@ -19,15 +19,15 @@ namespace ConsoleApplication
         /// </summary>
         public static void Main()
         {
+            for (int i = 1; i <= 100; i++)
+            {
+                Train nuevoTren = new Train($"Tren {i}");
+            }
+            Console.WriteLine($"Contador: {Train.count}");
+
             Train t1 = new Train("Last Train To London");
             Train t2 = new Train("Last Train To London");
             Train t3 = new Train("Runaway Train");
-
-            for (int i = 0; i < 100; i++)
-            {
-                Train nuevoTren = new Train($"{i}");
-            }
-            
             Console.WriteLine($"t1 == t2: {t1==t2}");
             Console.WriteLine($"t2 == t3: {t2==t3}");            
         }
