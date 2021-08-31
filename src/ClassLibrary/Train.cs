@@ -34,7 +34,7 @@ namespace ClassLibrary
             this.Id = nombre;
             count++;
         }
-        
+
         ~Train()
         {
             count--;
